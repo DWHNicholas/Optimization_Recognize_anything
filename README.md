@@ -75,4 +75,8 @@ print("Difference:", np.abs(torchvision_result - opencv_result).max())
 ```
 结果显示：
 ![yanzheng.jpg](images%2Fyanzheng.jpg)
-因此为了避免这个问题，直接使用torchvision的transform进行预处理，但是如果你不介意的情况下，用opencv处理也是没有问题的，只是标签少一点而已。
+
+- 因此为了避免这个问题，直接使用torchvision的transform进行预处理，但是如果你不介意的情况下，用opencv处理也是没有问题的，只是标签少一点而已。
+- 具体差别有多大可以看以下两张图：
+![origin.jpg](images%2Forigin.jpg)   原始的结果
+![opencv.jpg](images%2Fopencv.jpg)   opencv结果（尝试了几种处理方案，结果可能都略有区别）
